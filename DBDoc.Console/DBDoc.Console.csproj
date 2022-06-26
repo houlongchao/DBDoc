@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DBDoc.DB.MySql\DBDoc.DB.MySql.csproj" />
+    <ProjectReference Include="..\DBDoc.DB.Postgres\DBDoc.DB.Postgres.csproj" />
+    <ProjectReference Include="..\DBDoc.DB.SqlServer\DBDoc.DB.SqlServer.csproj" />
+    <ProjectReference Include="..\DBDoc.Doc.Excel\DBDoc.Doc.Excel.csproj" />
+    <ProjectReference Include="..\DBDoc.Doc.Word\DBDoc.Doc.Word.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Spectre.Console" Version="0.44.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Aspose.license.base64">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
